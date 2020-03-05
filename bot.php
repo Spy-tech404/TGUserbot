@@ -31,6 +31,9 @@ $bot = function ($update) use (&$MadelineProto, &$schedule, &$me, &$include, &$s
     if ($msg === '/help') {
         yield $sm($chatID, "Techs:\n\n/info\n/async\n/schedule\n/schedule2\n/drole (pvt)\n/help", $msgid);
     }
+} if ($msg === '/animatedmess') {
+  yield $sm($chatID, '<script> $('.loading').fadeOut(1000); </script>');
+} 
 };
 
 
